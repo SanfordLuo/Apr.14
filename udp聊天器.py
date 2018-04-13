@@ -21,6 +21,7 @@ def recv_func(object):
     print("ip:%s\n端口:%s\n数据；%s" % (recv_addr[0], recv_addr[1], recv_data))
 
 def run():
+    # 创建套接字
     my_udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     my_udp_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, True)
     my_port = int(input("请输入要绑定的本地端口号："))
