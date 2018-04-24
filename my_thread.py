@@ -45,3 +45,5 @@ class MyThread(threading.Thread):
 if __name__ == '__main__':
     my_thread = MyThread("自定义线程")
     my_thread.start()
+
+    
