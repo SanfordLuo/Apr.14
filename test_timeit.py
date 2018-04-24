@@ -46,3 +46,4 @@ def test():
 my_timer = timeit.Timer("test()","from __main__ import test")
 ret = my_timer.timeit(1000)
 print(ret)
+
